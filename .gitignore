@@ -1,0 +1,13 @@
+# IDE and editor files
+.aider*
+.vscode/
+.idea/
+
+# Config files
+config.yml
+data/
+data
+
+# Binary names
+./tcp-proxy
+./tcp_proxy

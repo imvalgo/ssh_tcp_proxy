@@ -1,0 +1,6 @@
+listen_at: "0.0.0.0:8123"         # Local SOCKS proxy port to expose (required, format: host:port)
+local_ssh_bind_to: "127.0.0.1:8123" # Local address for SSH SOCKS proxy to bind to (required, format: host:port)
+ssh_host: "remote-host"            # SSH remote host as defined in ~/.ssh/config (required)
+silent_ssh_process: false          # Optional: Suppress SSH process output (default: false)
+debug: true                        # Optional: Enable debug logging (default: false)
+ssh_probe_period: 30               # Optional: Health check interval in seconds (default: 60)

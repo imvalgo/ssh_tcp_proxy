@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    user: "568:568"
+    restart: unless-stopped
+    ports:
+      - "1080:1080" # Example port mapping, adjust as needed
+    volumes:
+      - ./data:/data:ro
+    environment:
+      - TZ=UTC
+    deploy:
+      resources:
+        limits:
+          memory: 128M
